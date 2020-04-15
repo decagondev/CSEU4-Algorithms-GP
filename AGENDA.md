@@ -8,6 +8,5 @@
 - 5 min break
 - Solve a Problem (power)
 - Talk briefly about run-time complexity (review)
-- 5 min break
 - A few real world applications of run-time analysis
 - wrap up
