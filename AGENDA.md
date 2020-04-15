@@ -3,6 +3,7 @@
 ## Day 1
 - What is an Algorithm
 - Review UPPER
+- 5 min break
 - Solve a problem (factorial)
 - 5 min break
 - Solve a Problem (power)
