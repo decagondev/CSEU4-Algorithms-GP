@@ -18,5 +18,5 @@ def add_one(num):
 print(add_one(4)) # => 5
 print(add_one(15)) # => 16
 print(add_one(40)) # => 41
-name = add_one("Dave") # ?
+name = add_one("A") # ?
 print(name) # => 21
