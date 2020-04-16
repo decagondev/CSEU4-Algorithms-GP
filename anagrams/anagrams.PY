@@ -96,7 +96,35 @@ def second_anagrams(words):
     return anagrams[longest]
 
 def anagrams(words):
-    pass
+    # create a new dict of anagrams
+    anagrams = {}
+
+    # create all sets of anagrams
+    #iterate over words
+    for word in words:
+        # convert list to str and lower case it
+        signature = "".join(sorted(word.lower()))
+
+        # check if sig not in anagrams
+        if signature not in anagrams:
+            # create list
+            anagrams[signature] = []
+
+        # append word to anagrams at sig
+        anagrams[signature].append(word)
+
+        # find longest set
+        maxLen = 0
+        maxAnagrams = []
+
+    # max function
+    for signature in anagrams:
+        if len(anagrams[signature]) > maxLen:
+            maxLen = len(anagrams[signature])
+            maxAnagrams = anagrams[signature]
+
+    # print the longest set
+    return maxAnagrams
 
 # test the algorithms
 import time
@@ -114,3 +142,23 @@ start = time.time()
 print(anagrams(words))
 end = time.time()
 print(f'3rd pass solution time: {end - start} seconds\n')
+
+# text file
+# angor
+# argon
+# goran
+# grano
+# groan
+# nagor
+# Orang
+# orang
+# organ
+# rogan
+# Ronga
+
+# l = ['angor', 'argon', 'goran', 'grano', 'groan', 'nagor', 'Orang', 'orang', 'organ', 'rogan', 'Ronga']
+
+# for w in l:
+#     sw = sorted(w).lower()
+#     print(sw)
+
